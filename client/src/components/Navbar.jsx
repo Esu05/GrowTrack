@@ -75,7 +75,7 @@ const Navbar = () => {
         <nav className="relative flex items-center p-4">
 
           <div className="flex items-center cursor-pointer relative font-family: var(--font-family-general)" onClick={() => navigate(user ? "/dashboard" : "/")}>
-            <img src={logo} alt="logo" className="w-12 h-12 rounded-full" />
+            <img src={logogrowtrack} alt="logo" className="w-12 h-12 rounded-full" />
             <span className="mr-10">GrowTrack</span>
           </div>
           
