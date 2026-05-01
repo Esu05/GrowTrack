@@ -5,7 +5,7 @@ import { supabase } from "../lib/supabase";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { applyTheme } from "../App";
-import logogrowtrack from "../assets/logogrowtrack.PNG";
+import logogrowtrack from "../assets/logogrowtrack.png";
 
 const navItems = [
   { name: "Home", path: "/" },
