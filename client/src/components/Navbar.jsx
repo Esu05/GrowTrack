@@ -5,6 +5,7 @@ import { supabase } from "../lib/supabase";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { applyTheme } from "../App";
+import logogrowtrack from "../assets/logogrowtrack.PNG";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -74,7 +75,7 @@ const Navbar = () => {
         <nav className="relative flex items-center p-4">
 
           <div className="flex items-center cursor-pointer relative font-family: var(--font-family-general)" onClick={() => navigate(user ? "/dashboard" : "/")}>
-            <img src="/src/assets/logogrowtrack.PNG" alt="logo" className="w-12 h-12 rounded-full" />
+            <img src={logo} alt="logo" className="w-12 h-12 rounded-full" />
             <span className="mr-10">GrowTrack</span>
           </div>
           
