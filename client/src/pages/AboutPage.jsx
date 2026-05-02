@@ -111,17 +111,20 @@ const AboutPage = () => {
         </div>
 
         {/* Closing callout */}
-        <div className="mt-12 rounded-xl border border-black/5 dark:border-white/10 bg-[#F9F2FF] dark:bg-[#1e1b2c]">
-          <p
-            className="text-2xl font-normal italic leading-snug mb-2 text-black dark:text-white"
-            style={{ fontFamily: "'DM Serif Display', serif" }}
-          >
-            "Growth isn't about perfection — it's about consistency over time."
-          </p>
-          <p className="text-sm font-light text-black/60 dark:text-white/50">
-            GrowTrack is here to help you stay on track, one day at a time.
-          </p>
-        </div>
+       <div className="mt-12 rounded-2xl border border-black/5 dark:border-white/10 bg-[#F9F2FF] dark:bg-[#1e1b2c] px-8 py-7 shadow-sm">
+  
+  <p
+    className="text-2xl md:text-3xl font-normal italic leading-snug text-black dark:text-white mb-3"
+    style={{ fontFamily: "'DM Serif Display', serif" }}
+  >
+    “Growth isn't about perfection — it's about consistency over time.”
+  </p>
+
+  <p className="text-sm font-light text-black/70 dark:text-white/60">
+    GrowTrack helps you stay consistent, one small step at a time.
+  </p>
+
+</div>
 
       </main>
     </div>
