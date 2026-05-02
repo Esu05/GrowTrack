@@ -120,10 +120,11 @@ const AboutPage = () => {
     “Growth isn't about perfection — it's about consistency over time.”
   </p>
 
+  <div className="text-center">
   <p className="text-sm font-light text-black/70 dark:text-white/60">
     GrowTrack helps you stay consistent, one small step at a time.
   </p>
-
+</div>
 </div>
 
       </main>
