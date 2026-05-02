@@ -21,10 +21,10 @@ const sections = [
     heading: 'What you can track',
     body: null,
     features: [
-      { label: 'Tasks & Productivity', color: 'bg-[#1D9E75]' },
-      { label: 'Mood Patterns',        color: 'bg-[#378ADD]' },
-      { label: 'Expenses & Budget',    color: 'bg-[#BA7517]' },
-      { label: 'Water Intake',         color: 'bg-[#D4537E]' },
+      { label: 'Tasks & Productivity', color: 'bg-[#12e294]' },
+      { label: 'Mood Patterns',        color: 'bg-[#D4537E]' },
+      { label: 'Expenses & Budget',    color: 'bg-[#F7A456]' },
+      { label: 'Water Intake',         color: 'bg-[#3facff]' },
       { label: 'Streaks & Consistency',color: 'bg-[#7F77DD]' },
     ],
   },
@@ -42,15 +42,14 @@ const sections = [
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#fdf6ee] dark:bg-[#0f0f0f] text-[#1a1a1a] dark:text-white">
+    <div className="flex flex-col min-h-screen bg-[#FFFFE0] dark:bg-black text-black dark:text-white">
       <Navbar />
       <br />
 
       <main className="max-w-3xl mx-auto w-full px-6 py-12 pb-20">
 
-        {/* Hero */}
         <div className="mb-14 pb-10 border-b border-black/10 dark:border-white/10 ">
-          <p className="text-[11px] font-medium tracking-[0.12em] uppercase text-neutral-500 dark:text-neutral-400 mb-3 ">
+          <p className="text-[11px] font-medium tracking-[0.12em] uppercase text-black/60 dark:text-white/60 mb-3 ">
             About GrowTrack
           </p>
           <h1
@@ -58,9 +57,9 @@ const AboutPage = () => {
             style={{ fontFamily: "'DM Serif Display', serif" }}
           >
             Growth is a<br />
-            <em className="text-neutral-400 dark:text-neutral-500 not-italic">daily practice.</em>
+            <em className="text-[#6c5cb8] dark:text-white/50 not-italic">daily practice.</em>
           </h1>
-          <p className="text-base font-light leading-relaxed text-neutral-600 dark:text-neutral-400 max-w-lg">
+          <p className="text-base font-light leading-relaxed text-black/70 dark:text-white/70 max-w-lg">
             GrowTrack is a personal growth and daily tracking platform designed to help
             you understand your habits, improve consistency, and make better decisions
             every day.
@@ -76,7 +75,7 @@ const AboutPage = () => {
             >
               {/* Label */}
               <div className="flex flex-col gap-1">
-                <span className="text-[11px] text-neutral-400 dark:text-neutral-600 tracking-wide">
+                <span className="text-[11px] text-black/50 dark:text-white/50 tracking-wide">
                   {s.num}
                 </span>
                 <h2
@@ -88,7 +87,7 @@ const AboutPage = () => {
               </div>
 
               {/* Body */}
-              <div className="text-[0.92rem] font-light leading-[1.85] text-neutral-600 dark:text-neutral-400">
+              <div className="text-[0.92rem] font-light leading-[1.85] text-black/70 dark:text-white/70">
                 {s.body && <p>{s.body}</p>}
                 {s.features && (
                   <>
@@ -97,7 +96,7 @@ const AboutPage = () => {
                       {s.features.map((f) => (
                         <div
                           key={f.label}
-                          className="flex items-center gap-2.5 rounded-lg border border-black/10 dark:border-white/10 bg-black/3 dark:bg-white/4 px-3.5 py-2.5 text-[0.8rem] text-[#1a1a1a] dark:text-white"
+                          className="flex items-center gap-2.5 rounded-lg border border-black/5 dark:border-white/10 bg-[#F9F2FF] dark:bg-[#1e1b2c] px-3.5 py-2.5 text-[0.8rem] text-black dark:text-white"
                         >
                           <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${f.color}`} />
                           {f.label}
@@ -112,14 +111,14 @@ const AboutPage = () => {
         </div>
 
         {/* Closing callout */}
-        <div className="mt-12 rounded-xl border border-black/10 dark:border-white/10 bg-[#F6ECFF] dark:bg-white/4 px-8 py-7">
+        <div className="mt-12 rounded-xl border border-black/5 dark:border-white/10 bg-[#F9F2FF] dark:bg-[#1e1b2c]">
           <p
-            className="text-2xl font-normal italic leading-snug mb-2 text-[#1a1a1a] dark:text-white"
+            className="text-2xl font-normal italic leading-snug mb-2 text-black dark:text-white"
             style={{ fontFamily: "'DM Serif Display', serif" }}
           >
             "Growth isn't about perfection — it's about consistency over time."
           </p>
-          <p className="text-sm font-light text-neutral-500 dark:text-neutral-500">
+          <p className="text-sm font-light text-black/60 dark:text-white/50">
             GrowTrack is here to help you stay on track, one day at a time.
           </p>
         </div>
